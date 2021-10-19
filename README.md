@@ -8,3 +8,7 @@ For the frontend, I used Flask with HTML and CSS. I created a sleak search bar u
 This project was inspired by: https://www.youtube.com/watch?v=9ogUMA-CXKI.
 
 Twitch API: https://dev.twitch.tv/docs/api/
+![alt text](https://gcdn.pbrd.co/images/XBwxEe2VGg69.png?o=1)
+![alt text](https://gcdn.pbrd.co/images/oFGolRppIjH1.png?o=1)
+
+

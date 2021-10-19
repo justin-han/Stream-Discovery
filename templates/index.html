@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    </head>
+<body style="background-color: rgb(54, 53, 51); font-family: 'Ubuntu', sans-serif">
+    <h1 style="text-align: center; color: whitesmoke">Welcome to Stream Discovery!</h1>
+    <form action="/" method = "POST">
+        <section class="inputwrapper">
+            <button type="submit" class= "button-solid">
+                <i class="fa fa-search fa-2x"></i>
+            </button>
+            <input type="text" placeholder="Type your game here..." name="game" style="font-size: 2rem; font-family: 'Ubuntu', sans-serif" autocomplete="off"/>
+        </section>
+    </form>
+    <h2 style="text-align: center; color: whitesmoke">Stream Discovery finds the best small streamers!</h2>
+    <h2 style="text-align: center; color: whitesmoke">Streamers are sorted by how active they are.</h2>
+    <h2 style="text-align: center; color: whitesmoke">Every streamer on the list has 1000 viewers or less.</h2>
+    <h2 style="text-align: center; color: whitesmoke">There is a direct link for every twitch stream</h2>
+    <h2 style="text-align: center; color: whitesmoke">Find new smaller streamers to watch!</h2>
+</body>
+</html> 
+

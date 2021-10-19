@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+<body style="background-color: rgb(54, 53, 51); font-family: 'Ubuntu', sans-serif">
+    
+
+    <h1 style="text-align:center;color:whitesmoke"> Streamers for {{streamers[0]['game_name']}} </h1>
+    <section class="container">
+    {% for i in range(0, len) %}
+        <div class="box">    
+            <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_{{streamers[i]['user_login']}}-355x200.jpg" class="img_thumbnail"/>
+            <p><b>{{streamers[i]['user_name']}}</b></p>
+            <p class="crop">{{streamers[i]['title']}}</p>
+            <!-- <p>{{streamers[i]['viewer_count']}}</p>
+                <span>
+                    <img src="https://img.icons8.com/windows/32/000000/person-male.png"/>
+                </span> -->
+            <button type="button" class="button_viewers">
+                <span class="button__iconV">
+                    <img src="https://www.pinclipart.com/picdir/big/89-890264_registration-options-free-overlay-twitch-red-clipart.png" width="12" height="12"/>
+                </span>
+                <span class="button__textV"><b style="color:#ce3235">{{streamers[i]['viewer_count']}}</b></span>
+            </button>
+            <p></p>
+            <a target="_blank" href="https://www.twitch.tv/{{streamers[i]['user_login']}}">
+                <button type="button" class="button_twitch">
+                    <span class="button__text"><b>Watch on Twitch!</b></span>
+                    <span class="button__icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Font_Awesome_5_brands_twitch.svg/512px-Font_Awesome_5_brands_twitch.svg.png" width="20" height="20"/>
+                    </span>
+                </button>
+            </a>
+        </div>
+    {% endfor %}
+    </section>
+
+
+
+</body>
+</html> 

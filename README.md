@@ -6,4 +6,5 @@ For the backend, I used Python and the Twitch API to find streamers based on the
 For the frontend, I used Flask with HTML and CSS. I created a sleak search bar using CSS. The streamers have a card with their name, stream title, viewer count, and a direct link to their stream.
 
 This project was inspired by: https://www.youtube.com/watch?v=9ogUMA-CXKI.
+
 Twitch API: https://dev.twitch.tv/docs/api/
